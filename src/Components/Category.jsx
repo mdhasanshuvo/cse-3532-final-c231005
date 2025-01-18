@@ -66,7 +66,7 @@ const Category = () => {
         {details.map((detail) => (
             <div
               key={detail.title}
-              className="card p-4 rounded-md"
+              className="card p-2 px-1 rounded-md"
             >
               <img
                 src={detail.thumbnail}
