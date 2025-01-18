@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import camera from "../assets/icon.png";
+import { MdVerified } from "react-icons/md";
 
 const Category = () => {
   const [categories, setCategories] = useState([]);
@@ -41,7 +42,7 @@ const Category = () => {
           <button
             onClick={() => handleCategory(category.category_id)}
             key={category.category_id}
-            className={`px-4 py-2 rounded-lg text-sm font-medium ${
+            className={`px-4 py-2 rounded-sm text-sm font-medium ${
               activeCategory === category.category_id
                 ? "bg-red-500 text-white"
                 : "bg-gray-200 text-gray-500"
@@ -53,7 +54,7 @@ const Category = () => {
       </div>
 
       {/* Display cards for category details*/}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
         {details.length === 0 && (
           <div className="flex flex-col items-center justify-center col-span-full mt-16">
             <img src={camera} alt="No Content" className="w-48 h-48 mb-4" />
@@ -65,7 +66,7 @@ const Category = () => {
         {details.map((detail) => (
             <div
               key={detail.title}
-              className="card bg-gray-100 shadow-lg p-4 rounded-lg"
+              className="card p-4 rounded-md"
             >
               <img
                 src={detail.thumbnail}
@@ -79,10 +80,10 @@ const Category = () => {
                   alt={detail.authors[0].profile_name}
                   className="w-8 h-8 rounded-full mr-2"
                 />
-                <p className="text-sm font-medium">
+                <p className="text-sm font-medium flex justify-center items-center gap-1">
                   {detail.authors[0].profile_name}{" "}
                   {detail.authors[0].verified && (
-                    <span className="text-blue-500 ml-1">✔</span>
+                    <MdVerified />
                   )}
                 </p>
               </div>
