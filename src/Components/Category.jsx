@@ -54,7 +54,14 @@ const Category = () => {
 
       {/* Display cards for category details*/}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-        
+        {details.length === 0 && (
+          <div className="flex flex-col items-center justify-center col-span-full mt-16">
+            <img src={camera} alt="No Content" className="w-48 h-48 mb-4" />
+            <h2 className="text-4xl font-bold text-gray-700">
+              Oops!! Sorry, There is no content here
+            </h2>
+          </div>
+        )}
         {details.map((detail) => (
             <div
               key={detail.title}
