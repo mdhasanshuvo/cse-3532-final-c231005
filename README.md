@@ -1,8 +1,28 @@
-# React + Vite
+# 📺 Video Categories Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web application that allows users to browse and view videos categorized into different topics. Includes active button state styling, loading indicators, and a "No Content" page when no data is available.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+
+- **Dynamic Categories**: Fetch and display categories from an API.
+- **Active Button Design**: Highlight the selected category with a red button.
+- **Responsive Layout**: Fully responsive design for all devices.
+- **No Content Page**: Custom design for empty categories.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: [React.js](https://reactjs.org/)
+- **Styling**: Tailwind CSS
+- **Icons**: Custom assets
+
+## 📂 Project Setup
+
+Follow these steps to run the project locally:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/video-categories-viewer.git
