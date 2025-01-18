@@ -44,7 +44,7 @@ const Category = () => {
             className={`px-4 py-2 rounded-lg text-sm font-medium ${
               activeCategory === category.category_id
                 ? "bg-red-500 text-white"
-                : "bg-gray-200 text-gray-700"
+                : "bg-gray-200 text-gray-500"
             }`}
           >
             {category.category}
